@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
 import 'bulma/css/bulma.css';
 import './Card.css';
-import Footer from './Footer';
 import Name from './Name';
 import About from './About'
 import { Fullpage, Slide } from 'fullpage-react';
@@ -33,5 +33,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

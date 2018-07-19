@@ -1,5 +1,9 @@
 import React from 'react';
 import Contact from './Contact'
+Object.defineProperty(document.body, 'scrollTop', {
+    set: value => window.scrollTo(0, value),
+    get: () => window.scrollY
+});
 
 const footerStars = [
     {
@@ -52,7 +56,7 @@ const Footer = () => (
             <div className="bd-footer-stars columns">
                 <BdFooterStars />
             </div>
-        <Contact />
+            <Contact />
         </div>
         <footer className="footer">
             <div className="content has-text-centered">
