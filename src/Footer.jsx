@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './Contact'
 
 const footerStars = [
     {
@@ -11,7 +12,7 @@ const footerStars = [
     {
         "name": "Hitokoto",
         "url": "https://github.com/WincerChan/Hitokoto",
-        "description": "A hitokoto API.",
+        "description": "A self-build hitokoto API.",
         "image": "https://bulma.io/images/footer/bootstrap-to-bulma.png",
         "refer": "View it on GitHub"
     },
@@ -51,6 +52,7 @@ const Footer = () => (
             <div className="bd-footer-stars columns">
                 <BdFooterStars />
             </div>
+        <Contact />
         </div>
         <footer className="footer">
             <div className="content has-text-centered">
