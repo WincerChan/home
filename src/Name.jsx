@@ -1,6 +1,8 @@
 import React from 'react';
-import Github from './github.svg';
-import Blog from './blog.svg';
+import Github from './svg/github.svg';
+import Blog from './svg/blog.svg';
+import Arrow from './Arrow'
+
 
 const Name = () => (
     <section className="hero is-fullheight">
@@ -21,6 +23,7 @@ const Name = () => (
                 </ul>
             </div>
         </div>
+        <Arrow />
     </section >
 )
 

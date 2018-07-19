@@ -94,7 +94,6 @@ print {
     display: block;
 }
 
-
 @media screen and (min-width: 769px),
 print {
     .bd-footer-stars {
@@ -171,7 +170,6 @@ print {
     padding: 1.5rem;
 }
 
-
 .bd-footer-links {
     margin-top: 6rem;
     padding-bottom: 6rem;
@@ -247,6 +245,9 @@ print {
     .project {
         margin-top: 10vh;
     }
+    .about {
+        margin-top: 40vh;
+    }
 }
 
 @media screen and (min-width: 769px),
@@ -263,6 +264,9 @@ print {
         margin-top: 36vh;
     }
     .project {
+        margin-top: 30vh;
+    }
+    .about {
         margin-top: 30vh;
     }
 }
@@ -317,23 +321,116 @@ figure {
     margin-bottom: 1.5rem;
 }
 
-
 #heart {
     color: #ff3860;
 }
+
 body {
     background-color: #fafafa;
 }
-html {
-    /* overflow-y: hidden; */
-}
+
 .footer {
     background-color: #fff;
     padding: 1.5rem 1.5rem 3rem;
 }
-.subtitle.is-5{
+
+.subtitle.is-5 {
     margin-bottom: 1.0rem;
 }
+
 .tabs li:hover {
-    background-color: rgba(153,153,153,.2);
+    background-color: rgba(153, 153, 153, .2);
+}
+
+.arrows {
+    width: 60px;
+    height: 62px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #76787d;
+    fill: transparent;
+    stroke-width: 1.2px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+/*Safari and Chrome*/
+
+    {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+
+.about-me {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #76787d;
+}
+
+@media screen and (min-width: 1280px),
+print {
+    .about {
+        width: auto;
+    }
+}
+@media screen and (min-width: 1080px),
+print {
+    .about {
+        width: auto;
+    }
+}
+@media screen and (min-width: 1472px),
+print {
+    .about {
+        width: auto;
+    }
 }
