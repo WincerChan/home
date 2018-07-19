@@ -47,7 +47,7 @@ const BdFooterStars = () => (
 
 const Footer = () => (
     <section className="hero is-fullheight">
-        <div className="container">
+        <div className="container project">
             <div className="bd-footer-stars columns">
                 <BdFooterStars />
             </div>

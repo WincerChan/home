@@ -94,9 +94,6 @@ print {
     display: block;
 }
 
-.bd-footer-stars {
-    margin-top: 2.5rem;
-}
 
 @media screen and (min-width: 769px),
 print {
@@ -174,10 +171,6 @@ print {
     padding: 1.5rem;
 }
 
-.bd-footer-star-figure {
-    height: 156px;
-    margin-top: -1rem;
-}
 
 .bd-footer-links {
     margin-top: 6rem;
@@ -244,6 +237,16 @@ print {
     .bd-footer-link.bd-has-subtitle a em {
         width: 100%;
     }
+    .bd-footer-star-figure {
+        height: 66px;
+        margin-top: -1rem
+    }
+    .name {
+        margin-top: 40vh;
+    }
+    .project {
+        margin-top: 10vh;
+    }
 }
 
 @media screen and (min-width: 769px),
@@ -251,6 +254,16 @@ print {
     .bd-footer-link.bd-has-subtitle a em {
         margin-left: 1rem;
         text-align: right;
+    }
+    .bd-footer-star-figure {
+        height: 156px;
+        margin-top: -1rem
+    }
+    .name {
+        margin-top: 36vh;
+    }
+    .project {
+        margin-top: 30vh;
     }
 }
 
@@ -304,10 +317,6 @@ figure {
     margin-bottom: 1.5rem;
 }
 
-.bd-footer-star-figure {
-    height: 156px;
-    margin-top: -1rem
-}
 
 #heart {
     color: #ff3860;
@@ -316,12 +325,15 @@ body {
     background-color: #fafafa;
 }
 html {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .footer {
     background-color: #fff;
     padding: 1.5rem 1.5rem 3rem;
 }
-.container {
-    margin-top: 30vh;
+.subtitle.is-5{
+    margin-bottom: 1.0rem;
+}
+.tabs li:hover {
+    background-color: rgba(153,153,153,.2);
 }
