@@ -60,7 +60,7 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <a className="contact-menu" onClick={this.toggleModal}>
+                <a className="contact-menu showdelay" onClick={this.toggleModal}>
                     <img className="contact-icon" src={ContactIcon} alt=""/>
               </a>
                 <Modal

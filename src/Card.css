@@ -172,7 +172,6 @@ print {
     background-size: 440px 180px;
 }
 
-
 .bd-footer-links {
     margin-top: 6rem;
     padding-bottom: 6rem;
@@ -420,8 +419,6 @@ body {
     color: #76787d;
 }
 
-
-
 @media screen and (min-width: 1280px),
 print {
     .about,
@@ -469,7 +466,7 @@ print {
     cursor: pointer;
     width: 70px;
     height: 50px;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
 }
@@ -496,6 +493,7 @@ print {
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
     transform: scale(1.08);
 }
+
 html {
     overflow: hidden;
 }
@@ -503,6 +501,16 @@ html {
 .bg {
     background-color: #fafafa;
 }
+
 .button {
     height: 1.99em;
+}
+
+.showdelay {
+    transition-duration: .6s;
+    -moz-transition-duration: .6s;
+    /* Firefox 4 */
+    -webkit-transition-duration: .6s;
+    /* Safari 和 Chrome */
+    -o-transition-duration: .6s;
 }
