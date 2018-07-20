@@ -4,32 +4,27 @@ import 'bulma/css/bulma.css';
 import './Card.css';
 import Name from './Name';
 import About from './About'
-import { Fullpage, Slide } from 'fullpage-react';
+import { FullPage, Slide } from 'react-full-page';
+import "babel-polyfill"
 
-const fullPageOptions = {
-  // for mouse/wheel events
-  // represents the level of force required to generate a slide change on non-mobile, 10 is default
-  scrollSensitivity: 0,
-
-  // for touchStart/touchEnd/mobile scrolling
-  // represents the level of force required to generate a slide change on mobile, 10 is default
-  touchSensitivity: 0,
-  scrollSpeed: 500,
-  hideScrollBars: true,
-  enableArrowKeys: true
-};
-
-const slides = [
-  <Slide><Name /></Slide>,
-  <Slide> <About /></Slide>,
-  <Slide> <Footer /></Slide>
-];
-fullPageOptions.slides = slides;
+let options = {
+  duration: 888
+}
 
 class App extends Component {
   render() {
     return (
-      <Fullpage {...fullPageOptions} />
+      <FullPage {...options} >
+        <Slide>
+          <Name />
+        </Slide>
+        <Slide>
+          <About />
+        </Slide>
+        <Slide>
+          <Footer />
+        </Slide>
+      </FullPage >
     );
   }
 }

@@ -101,6 +101,9 @@ print {
         display: flex;
         justify-content: space-between;
     }
+    .bd-footer-star-header {
+        padding: 1.5rem;
+    }
 }
 
 .bd-footer-star {
@@ -114,6 +117,9 @@ print {
 @media screen and (max-width: 768px) {
     .bd-footer-star:not(:last-child) {
         margin-bottom: 1.5rem;
+    }
+    .bd-footer-star-header {
+        padding: 0.5rem;
     }
 }
 
@@ -166,9 +172,6 @@ print {
     background-size: 440px 180px;
 }
 
-.bd-footer-star-header {
-    padding: 1.5rem;
-}
 
 .bd-footer-links {
     margin-top: 6rem;
@@ -345,9 +348,9 @@ body {
 .arrows {
     width: 60px;
     height: 62px;
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
-    margin-left: -30px;
+    text-align: center;
     bottom: 20px;
 }
 
@@ -416,23 +419,28 @@ body {
     color: #76787d;
 }
 
+
+
 @media screen and (min-width: 1280px),
 print {
-    .about, .contact {
+    .about,
+    .contact {
         width: auto;
     }
 }
 
 @media screen and (min-width: 1080px),
 print {
-    .about, .contact {
+    .about,
+    .contact {
         width: auto;
     }
 }
 
 @media screen and (min-width: 1472px),
 print {
-    .about, .contact {
+    .about,
+    .contact {
         width: auto;
     }
 }
@@ -464,6 +472,7 @@ print {
     right: 0;
     top: 0;
 }
+
 .contact-menu span {
     background-color: currentColor;
     display: block;
@@ -473,13 +482,26 @@ print {
     transition: 86ms;
     width: 16px;
 }
-.contact-menu span:first-child{
+
+.contact-menu span:first-child {
     top: calc(50% -6px);
 }
+
 .contact-icon {
     margin: 10px 10px 15px 20px;
 }
+
 .contact-menu:hover {
-    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
     transform: scale(1.08);
+}
+html {
+    overflow: hidden;
+}
+
+.bg {
+    background-color: #fafafa;
+}
+.button {
+    height: 1.99em;
 }
