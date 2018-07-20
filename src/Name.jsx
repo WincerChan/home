@@ -12,12 +12,12 @@ const Name = () => (
             <div className="tabs is-centered">
                 <ul>
                     <li className="is-info is-outlined showdelay">
-                        <a href="https://github.com/WincerChan"><img src={Blog} alt="" />
+                        <a href="https://blog.itswincer.com/"><img src={Blog} alt="" />
                             <span className="subtitle is-6 has-text-info">&nbsp;Blog</span>
                         </a>
                     </li>
                     <li className="is-info is-outlined showdelay">
-                        <a href="https://blog.itswincer.com/"><img src={Github} alt="" />
+                        <a href="https://github.com/WincerChan"><img src={Github} alt="" />
                             <span className="subtitle is-6 has-text-info">&nbsp;GitHub</span>
                         </a>
                     </li>
