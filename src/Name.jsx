@@ -6,7 +6,7 @@ import Contact from './Contact'
 
 
 const Name = () => (
-    <section className="hero is-fullheight">
+    <section className="hero is-fullheight bg">
         <div className="container name has-text-centered">
             <h4 className="subtitle is-5">hi, I'm <strong>Wincer</strong> /ˈwɪnsə(r)/ </h4>
             <div className="tabs is-centered">
