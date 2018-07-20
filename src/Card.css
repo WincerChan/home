@@ -336,7 +336,7 @@ body {
     padding: 1.5rem 1.5rem 3rem;
 }
 
-tabs li:hover {
+.tabs li:hover {
     background-color: rgba(153, 153, 153, .2);
 }
 
