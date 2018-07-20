@@ -238,8 +238,8 @@ print {
         width: 100%;
     }
     .bd-footer-star-figure {
-        height: 66px;
-        margin-top: -1rem
+        height: 10vh;
+        margin-top: -.88rem
     }
     .name {
         margin-top: 40vh;
@@ -448,6 +448,7 @@ print {
 
 .contact {
     background-color: #fafafa;
+    margin-bottom: 10vh;
 }
 
 .modal-background {
@@ -497,8 +498,6 @@ print {
     transform: scale(1.08);
 }
 
-
-
 .bg {
     background-color: #fafafa;
 }
@@ -515,9 +514,11 @@ print {
     /* Safari 和 Chrome */
     -o-transition-duration: .6s;
 }
-html{
+
+html {
     overflow: hidden;
 }
+
 .posi {
     margin-right: auto;
 }

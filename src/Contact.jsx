@@ -11,21 +11,19 @@ const Modal = ({ closeModal, modalState, title }) => {
     return (
         <div className="modal is-active animated slideInDown">
             <div className="modal-background" onClick={closeModal} />
-            <div className="content">
-                <div className="container contact">
-                    <h6 className="subtitle is-6">Contact me </h6>
-                    <span className="about-me">Telegram&nbsp;
+            <div className="container contact">
+                <h6 className="subtitle is-6">Contact me </h6>
+                <span className="about-me">Telegram&nbsp;
                             <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
-                    </span>
-                    <br />
-                    <span className="about-me">Twitter&nbsp;
+                </span>
+                <br />
+                <span className="about-me">Twitter&nbsp;
                             <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
-                    </span>
-                    <br />
-                    <span className="about-me">Mail&nbsp;
+                </span>
+                <br />
+                <span className="about-me">Mail&nbsp;
                         <a className="abuse-email" rel='noopener noreferrer' target='_blank'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
-                    </span>
-                </div>
+                </span>
             </div>
             <button class="modal-close is-large" aria-label="close" onClick={closeModal}></button>
         </div>
