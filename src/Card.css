@@ -45,7 +45,7 @@
 
 .bd-footer-support .bd-footer-title,
 .bd-footer-star .bd-footer-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .bd-footer-support {
@@ -116,7 +116,7 @@ print {
 
 @media screen and (max-width: 768px) {
     .bd-footer-star:not(:last-child) {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.8rem;
     }
     .bd-footer-star-header {
         padding: 0.5rem;
@@ -245,7 +245,7 @@ print {
         margin-top: 40vh;
     }
     .project {
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
     .about {
         margin-top: 36vh;
@@ -320,7 +320,7 @@ figure {
 .bd-figure:not(:last-child),
 .bd-snippet:not(:last-child),
 .bd-callout:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 #heart {
@@ -336,11 +336,7 @@ body {
     padding: 1.5rem 1.5rem 3rem;
 }
 
-.subtitle.is-5 {
-    margin-bottom: 1.0rem;
-}
-
-.tabs li:hover {
+tabs li:hover {
     background-color: rgba(153, 153, 153, .2);
 }
 
@@ -415,13 +411,14 @@ body {
 
 .about-me {
     font-family: Roboto, 'Open Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #76787d;
 }
 
 @media screen and (min-width: 1280px),
 print {
     .about,
+    .name,
     .contact {
         width: auto;
     }
@@ -430,6 +427,7 @@ print {
 @media screen and (min-width: 1080px),
 print {
     .about,
+    .name,
     .contact {
         width: auto;
     }
@@ -438,6 +436,7 @@ print {
 @media screen and (min-width: 1472px),
 print {
     .about,
+    .name,
     .contact {
         width: auto;
     }
@@ -518,4 +517,7 @@ print {
 }
 html{
     overflow: hidden;
+}
+.posi {
+    margin-right: auto;
 }

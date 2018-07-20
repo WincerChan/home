@@ -12,7 +12,7 @@ const AboutMe = [
 const About = () => (
     <section className="hero is-fullheight bg">
         <div className="container about has-text-lefted">
-            <h4 className="subtitle is-5">About me </h4>
+            <h6 className="subtitle is-6">About me </h6>
             {
                 AboutMe.map((item, i) => <span key={i} className="about-me">{item}<br /></span>)
             }

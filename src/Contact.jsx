@@ -13,7 +13,7 @@ const Modal = ({ closeModal, modalState, title }) => {
             <div className="modal-background" onClick={closeModal} />
             <div className="content">
                 <div className="container contact">
-                    <h4 className="subtitle is-5">Contact me </h4>
+                    <h6 className="subtitle is-6">Contact me </h6>
                     <span className="about-me">Telegram&nbsp;
                             <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
                     </span>

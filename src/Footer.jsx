@@ -34,9 +34,9 @@ const BdFooterStars = () => (
         {footerStars.map((footerStar, i) =>
             <div key={i} className="bd-footer-star">
                 <header className="bd-footer-star-header">
-                    <h4 className="bd-footer-title">
+                    <h5 className="bd-footer-title">
                         <strong>{footerStar.name}</strong>
-                    </h4>
+                    </h5>
                     <p className="bd-footer-subtitle">
                         {footerStar.description}
                     </p>
