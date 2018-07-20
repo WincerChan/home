@@ -455,6 +455,10 @@ print {
     background-color: #fafafa;
 }
 
+.modal {
+    position: absolute;
+}
+
 .delete::before,
 .modal-close::before,
 .delete::after,
@@ -494,9 +498,7 @@ print {
     transform: scale(1.08);
 }
 
-html {
-    overflow: hidden;
-}
+
 
 .bg {
     background-color: #fafafa;

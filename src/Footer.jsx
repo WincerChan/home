@@ -56,13 +56,13 @@ const Footer = () => (
             <div className="bd-footer-stars columns">
                 <BdFooterStars />
             </div>
-            <Contact />
         </div>
         <footer className="footer">
             <div className="content has-text-centered">
                 ©2017 - 2018 <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
             </div>
         </footer>
+        <Contact />
     </section>
 
 )

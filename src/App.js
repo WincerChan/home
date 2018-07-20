@@ -15,17 +15,17 @@ const fullPageOptions = {
 
 class App extends Component {
   componentDidMount() {
-    document.ontouchmove = function (ev) {
-      ev.preventDefault();
-    }
+    // document.ontouchmove = function (ev) {
+    //   ev.preventDefault();
+    // }
   }
   render() {
     return (
-      <Scroller {...fullPageOptions}>
-        <Section> <Name /></Section>
-        <Section> <About /></Section>
-        <Section> <Footer /></Section>
-      </Scroller>
+      <div>
+        <Name />
+        <About />
+        <Footer />
+      </div>
     );
   }
 }
