@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ContactIcon from './svg/contact.svg';
 import 'animate.css';
 
-
 const Modal = ({ closeModal, modalState, title }) => {
     if (!modalState) {
         return null;
@@ -24,7 +23,7 @@ const Modal = ({ closeModal, modalState, title }) => {
                     </span>
                     <br />
                     <span className="about-me">Mail&nbsp;
-                        <a rel='noopener noreferrer' target='_blank' href='#'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
+                        <a className="abuse-email" rel='noopener noreferrer' target='_blank'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
                     </span>
                 </div>
             </div>
@@ -49,6 +48,15 @@ class Contact extends Component {
         this.toggleModal = this.toggleModal.bind(this);
     }
 
+    base64ToEmail() {
+        console.log(document.querySelector('.contact-menu'))
+        setTimeout(() => {
+            var email = document.querySelector(".abuse-email")
+            email.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t")
+        }, 100)
+
+    }
+
     toggleModal() {
         this.setState((prev, props) => {
             const newState = !prev.modalState;
@@ -61,8 +69,8 @@ class Contact extends Component {
         return (
             <div>
                 <a className="contact-menu showdelay" onClick={this.toggleModal}>
-                    <img className="contact-icon" src={ContactIcon} alt=""/>
-              </a>
+                    <img onClick={this.base64ToEmail} className="contact-icon" src={ContactIcon} alt="" />
+                </a>
                 <Modal
                     closeModal={this.toggleModal}
                     modalState={this.state.modalState}

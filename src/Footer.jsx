@@ -31,8 +31,8 @@ const footerStars = [
 
 const BdFooterStars = () => (
     <div className="bd-footer-stars column">
-        {footerStars.map(footerStar =>
-            <div className="bd-footer-star">
+        {footerStars.map((footerStar, i) =>
+            <div key={i} className="bd-footer-star">
                 <header className="bd-footer-star-header">
                     <h4 className="bd-footer-title">
                         <strong>{footerStar.name}</strong>
@@ -42,7 +42,7 @@ const BdFooterStars = () => (
                     </p>
                 </header>
                 <figure className="bd-footer-star-figure">
-                    <a rel="noopener noreferrer" target="_blank" class="button is-link is-outlined" href={footerStar.url}>
+                    <a rel="noopener noreferrer" target="_blank" className="button is-link is-outlined" href={footerStar.url}>
                         {footerStar.refer}
                     </a>
                 </figure>
