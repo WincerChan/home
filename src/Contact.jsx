@@ -3,32 +3,42 @@ import PropTypes from 'prop-types';
 import ContactIcon from './svg/contact.svg';
 import 'animate.css';
 
-const Modal = ({ closeModal, modalState, title }) => {
-    if (!modalState) {
-        return null;
+class Modal extends Component {
+    constructor(props) {
+        super(props)
+        this.emailAddr = '#'
+    }
+    componentDidMount(){
+        this.emailAddr = atob('bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t');
+    }
+    render() {
+        if (!this.props.modalState) {
+            return null
+        }
+        return (
+            <div className="modal is-active animated slideInDown">
+                <div className="modal-background" onClick={this.props.closeModal} />
+                <div className="container contact">
+                    <h6 className="subtitle is-6">Contact me </h6>
+                    <span className="about-me">Telegram&nbsp;
+                            <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
+                    </span>
+                    <br />
+                    <span className="about-me">Twitter&nbsp;
+                            <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
+                    </span>
+                    <br />
+                    <span className="about-me">Mail&nbsp;
+                        <a href={this.emailAddr} className="abuse-email" rel='noopener noreferrer' target='_blank'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
+                    </span>
+                </div>
+                <button className="modal-close is-large" aria-label="close" onClick={this.props.closeModal}></button>
+            </div>
+        )
     }
 
-    return (
-        <div className="modal is-active animated slideInDown">
-            <div className="modal-background" onClick={closeModal} />
-            <div className="container contact">
-                <h6 className="subtitle is-6">Contact me </h6>
-                <span className="about-me">Telegram&nbsp;
-                            <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
-                </span>
-                <br />
-                <span className="about-me">Twitter&nbsp;
-                            <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
-                </span>
-                <br />
-                <span className="about-me">Mail&nbsp;
-                        <a className="abuse-email" rel='noopener noreferrer' target='_blank'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
-                </span>
-            </div>
-            <button class="modal-close is-large" aria-label="close" onClick={closeModal}></button>
-        </div>
-    );
 }
+
 
 Modal.propTypes = {
     closeModal: PropTypes.func.isRequired,
@@ -67,7 +77,7 @@ class Contact extends Component {
         return (
             <div>
                 <a className="contact-menu showdelay" onClick={this.toggleModal}>
-                    <img onClick={this.base64ToEmail} className="contact-icon" src={ContactIcon} alt="" />
+                    <img className="contact-icon" src={ContactIcon} alt="" />
                 </a>
                 <Modal
                     closeModal={this.toggleModal}
