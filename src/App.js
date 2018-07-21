@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
 import 'bulma/css/bulma.css';
+import Contact from './Contact';
 import './Card.css';
 import Name from './Name';
 import About from './About'
@@ -14,11 +15,14 @@ const fullPageOptions = {
 class App extends Component {
   render() {
     return (
-      <Scroller {...fullPageOptions}>
-        <Section> <Name /></Section>
-        <Section> <About /></Section>
-        <Section> <Footer /></Section>
-      </Scroller>
+      <div>
+        <Contact />
+        <Scroller {...fullPageOptions}>
+          <Section> <Name /></Section>
+          <Section> <About /></Section>
+          <Section> <Footer /></Section>
+        </Scroller>
+      </div>
     );
   }
 }

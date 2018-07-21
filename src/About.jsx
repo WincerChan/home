@@ -1,6 +1,5 @@
 import React from 'react';
 import Arrow from './Arrow';
-import Contact from './Contact'
 
 const AboutMe = [
     "宅",
@@ -17,7 +16,6 @@ const About = () => (
                 AboutMe.map((item, i) => <span key={i} className="about-me">{item}<br /></span>)
             }
         </div>
-        <Contact />
         <Arrow />
     </section>
 )

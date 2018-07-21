@@ -2,7 +2,6 @@ import React from 'react';
 import Github from './svg/github.svg';
 import Blog from './svg/blog.svg';
 import Arrow from './Arrow';
-import Contact from './Contact'
 
 
 const Name = () => (
@@ -25,7 +24,6 @@ const Name = () => (
                 </ul>
             </div>
         </div>
-        <Contact />
         <Arrow />
     </section >
 )

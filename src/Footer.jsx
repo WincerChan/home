@@ -1,10 +1,4 @@
 import React from 'react';
-import Contact from './Contact'
-Object.defineProperty(document.body, 'scrollTop', {
-    set: value => window.scrollTo(0, value),
-    get: () => window.scrollY
-});
-
 const footerStars = [
     {
         "name": "Meme",
@@ -57,7 +51,6 @@ const Footer = () => (
                 <BdFooterStars />
             </div>
         </div>
-        <Contact />
         <footer className="footer">
             <div className="content has-text-centered">
                 ©2017 - 2018 <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
