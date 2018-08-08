@@ -28,7 +28,7 @@ class Modal extends Component {
                             <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
                     </span>
                     <br />
-                    <span className="about-me">Mail&nbsp;
+                    <span className="about-me">Email&nbsp;
                         <a href={this.emailAddr} className="abuse-email" rel='noopener noreferrer' target='_blank'>WincerChan@<span className="NotShow">fuck</span>gmail.com</a>
                     </span>
                 </div>
