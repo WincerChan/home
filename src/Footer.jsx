@@ -24,23 +24,35 @@ const footerStars = [
 ]
 
 const BdFooterStars = () => (
-    <div className="bd-footer-stars column">
-        {footerStars.map((footerStar, i) =>
-            <div key={i} className="bd-footer-star">
-                <header className="bd-footer-star-header">
-                    <h5 className="bd-footer-title">
-                        <strong>{footerStar.name}</strong>
-                    </h5>
-                    <p className="bd-footer-subtitle">
-                        {footerStar.description}
-                    </p>
-                </header>
-                <figure className="bd-footer-star-figure">
-                    <a rel="noopener noreferrer" target="_blank" className="button is-link is-outlined" href={footerStar.url}>
-                        {footerStar.refer}
-                    </a>
-                </figure>
-            </div>)}
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+            <article class="tile is-child notification one showdelay">
+                <p class="subtitle">DIEM API</p>
+                <p>There are Two APIs: Hitokoto and Netease Cloud Music.</p>
+            </article>
+        </div>
+        <div class="tile is-vertical is-4">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification two showdelay">
+                        <p class="subtitle">Meme</p>
+                        <p>A tool(Written by JavaScript) for generate meme.</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification three showdelay">
+                        <p class="subtitle">Douban Export</p>
+                        <p>Export all Douban items which marked.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification four showdelay">
+                    <p class="subtitle">QQMusic Parse</p>
+                    <p>JavaScript parse for QQ music.</p>
+                </article>
+            </div>
+        </div>
     </div>
 )
 
@@ -53,7 +65,7 @@ const Footer = () => (
         </div>
         <footer className="footer">
             <div className="content has-text-centered">
-                ©2017 - 2018 <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
+                ©2017 - {new Date().getFullYear()} <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
             </div>
         </footer>
     </section>

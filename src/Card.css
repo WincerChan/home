@@ -494,7 +494,7 @@ print {
     margin: 10px 10px 15px 20px;
 }
 
-.contact-menu:hover {
+.contact-menu:hover, .one:hover, .three:hover, .two:hover, .four:hover {
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
     transform: scale(1.08);
 }
@@ -522,4 +522,35 @@ html {
 
 .posi {
     margin-right: auto;
+}
+/* fdffffffffffffffffffffff */
+.tile {
+  justify-content: center;
+}
+.notification {
+    border-radius: 0%;
+    background-color: #f0f0f0;
+}
+.is-child.notification:hover {
+    cursor: pointer;
+}
+.one:hover {
+    background-color: hsl(217, 71%, 53%, 84);
+    color: #fff;
+    /* transition: opacity .3s ease,font-size .3s ease,color .1s ease */
+}
+
+.two:hover {
+    background-color:  hsla(57.3, 74.7%, 53.5%, 0.84);
+    color: #fff;
+}
+
+.three:hover {
+    background-color:  hsla(141, 71.3%, 47.8%, 0.85);
+    color: #fff;
+}
+
+.four:hover {
+    background-color: hsla(347.9, 100%, 61%, 0.85);
+    color: #fff;
 }
