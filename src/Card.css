@@ -121,6 +121,9 @@ print {
     .bd-footer-star-header {
         padding: 0.5rem;
     }
+    .dontShow {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 769px),
