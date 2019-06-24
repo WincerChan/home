@@ -7,25 +7,28 @@ class Modal extends Component {
     constructor(props) {
         super(props)
         this.emailAddr = '#'
+        console.log(props)
+        this.initialState = true
     }
-    componentDidMount(){
+    componentDidMount() {
         this.emailAddr = atob('bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t');
     }
     render() {
-        if (!this.props.modalState) {
+        if (!this.props.modalState && this.initialState) {
+            this.initialState = false
             return null
         }
         return (
-            <div className="modal is-active animated slideInDown">
+            <div className={"modal is-active animated " + (this.props.modalState ? "slideInDown" : "slideOutUp")} >
                 <div className="modal-background" onClick={this.props.closeModal} />
                 <div className="container contact">
                     <h6 className="subtitle is-6">Contact me </h6>
                     <span className="about-me">Telegram&nbsp;
-                            <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
+                        <a rel='noopener noreferrer' target='_blank' href='https://t.me/Tivsae'>@Tivsae</a>
                     </span>
                     <br />
                     <span className="about-me">Twitter&nbsp;
-                            <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
+                        <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/wincer_chan'>@wincer_chan</a>
                     </span>
                     <br />
                     <span className="about-me">Email&nbsp;
