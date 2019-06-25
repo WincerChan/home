@@ -557,3 +557,10 @@ html {
     background-color: hsla(347.9, 100%, 61%, 0.85);
     color: #fff;
 }
+.jump {
+    width: 110%;
+    height: 110%;
+}
+.tile>a {
+    text-decoration: none!important;
+}
