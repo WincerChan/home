@@ -9,15 +9,17 @@ const AboutMe = [
 ]
 
 const About = () => (
-    <section className="hero is-fullheight bg">
-        <div className="container about has-text-lefted">
-            <h6 className="subtitle is-6">About me </h6>
-            {
-                AboutMe.map((item, i) => <span key={i} className="about-me">{item}<br /></span>)
-            }
-        </div>
-        <Arrow />
-    </section>
+    <div className="section">
+        <section className="hero is-fullheight bg">
+            <div className="container about has-text-lefted">
+                <h6 className="subtitle is-6">About me </h6>
+                {
+                    AboutMe.map((item, i) => <span key={i} className="about-me">{item}<br /></span>)
+                }
+            </div>
+            <Arrow />
+        </section>
+    </div>
 )
 
 export default About;

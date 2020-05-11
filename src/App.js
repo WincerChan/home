@@ -5,23 +5,25 @@ import Contact from './Contact';
 import './Card.css';
 import Name from './Name';
 import About from './About'
-import { Scroller, Section } from 'react-fully-scrolled';
-
-const fullPageOptions = {
-  transDuration: 1,
-  swipeSensitivity: 80,
-};
+import ReactFullpage from '@fullpage/react-fullpage'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Contact />
-        <Scroller {...fullPageOptions}>
-          <Section> <Name /></Section>
-          <Section> <About /></Section>
-          <Section> <Footer /></Section>
-        </Scroller>
+        <ReactFullpage
+          scrollingSpeed={1000}
+          render={() => {
+            return (
+              <ReactFullpage.Wrapper>
+                <Name />
+                <About />
+                <Footer />
+              </ReactFullpage.Wrapper>
+            )
+          }}
+        />
       </div>
     );
   }
