@@ -564,3 +564,7 @@ html {
 .tile>a {
     text-decoration: none!important;
 }
+
+.section {
+    padding: unset;
+}

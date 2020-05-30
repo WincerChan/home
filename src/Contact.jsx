@@ -7,7 +7,6 @@ class Modal extends Component {
     constructor(props) {
         super(props)
         this.emailAddr = '#'
-        console.log(props)
         this.initialState = true
     }
     componentDidMount() {

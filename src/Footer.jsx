@@ -50,19 +50,28 @@ const BdFooterStars = () => (
 )
 
 const Footer = () => (
-    <section className="hero is-fullheight bg">
-        <div className="container project">
-            <div className="bd-footer-stars columns">
-                <BdFooterStars />
+    <div className="section">
+        <section className="hero is-fullheight bg">
+            <div className="container project">
+                <div className="bd-footer-stars columns">
+                    <BdFooterStars />
+                </div>
             </div>
-        </div>
-        <footer className="footer">
-            <div className="content has-text-centered">
-                ©2017 - {new Date().getFullYear()} <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
+            <footer className="footer">
+                <div className="content has-text-centered">
+                    ©2017 - {new Date().getFullYear()} <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
             </div>
-        </footer>
-    </section>
-
+            </footer>
+        </section>
+    </div>
 )
+
+// const Footer = () => (
+//     <div className="section">
+//         <section>
+//             <p>Section 2</p>
+//         </section>
+//     </div>
+// )
 
 export default Footer;
