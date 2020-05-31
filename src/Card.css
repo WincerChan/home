@@ -568,3 +568,8 @@ html {
 .section {
     padding: unset;
 }
+
+
+.container {
+  flex-grow: unset;
+}

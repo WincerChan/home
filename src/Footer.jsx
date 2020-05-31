@@ -1,46 +1,46 @@
 import React from 'react';
 
 const BdFooterStars = () => (
-    <div class="tile is-ancestor">
-        <div class="tile is-parent is-3">
-            <article class="tile is-child notification one showdelay">
-                <a href="https://api.itswincer.com" class="jump">
+    <div className="tile is-ancestor">
+        <div className="tile is-parent is-3">
+            <article className="tile is-child notification one showdelay">
+                <a href="https://api.itswincer.com" className="jump">
                     <div className="jump">
-                        <p class="subtitle">DIEM API</p>
-                        <p class="dontShow">There are Two APIs: Hitokoto and Netease Cloud Music.</p>
+                        <p className="subtitle">DIEM API</p>
+                        <p className="dontShow">There are Two APIs: Hitokoto and Netease Cloud Music.</p>
                     </div>
                 </a>
             </article>
         </div>
-        <div class="tile is-vertical is-4">
-            <div class="tile">
-                <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification two showdelay">
-                        <a href="https://meme.itswincer.com" class="href">
+        <div className="tile is-vertical is-4">
+            <div className="tile">
+                <div className="tile is-parent is-vertical">
+                    <article className="tile is-child notification two showdelay">
+                        <a href="https://meme.itswincer.com" className="href">
                             <div className="jump">
-                                <p class="subtitle">Meme</p>
-                                <p class="dontShow">A tool(Written by JavaScript) for generate meme.</p>
+                                <p className="subtitle">Meme</p>
+                                <p className="dontShow">A tool(Written by JavaScript) for generate meme.</p>
                             </div>
                         </a>
                     </article>
                 </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification three showdelay">
-                        <a href="https://github.com/WincerChan/douban-import" class="href">
+                <div className="tile is-parent">
+                    <article className="tile is-child notification three showdelay">
+                        <a href="https://github.com/WincerChan/douban-import" className="href">
                             <div className="jump">
-                                <p class="subtitle">Douban Export</p>
-                                <p class="dontShow">Export all Douban items which marked.</p>
+                                <p className="subtitle">Douban Export</p>
+                                <p className="dontShow">Export all Douban items which marked.</p>
                             </div>
                         </a>
                     </article>
                 </div>
             </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification four showdelay">
-                    <a href="https://github.com/WincerChan/QQMusic-Parse" class="href">
+            <div className="tile is-parent">
+                <article className="tile is-child notification four showdelay">
+                    <a href="https://github.com/WincerChan/QQMusic-Parse" className="href">
                         <div className="jump">
-                            <p class="subtitle">QQMusic Parse</p>
-                            <p class="dontShow">JavaScript parse for QQ music.</p>
+                            <p className="subtitle">QQMusic Parse</p>
+                            <p className="dontShow">JavaScript parse for QQ music.</p>
                         </div>
                     </a>
                 </article>
