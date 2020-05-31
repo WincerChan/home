@@ -7,7 +7,7 @@ const BdFooterStars = () => (
                 <a href="https://api.itswincer.com" className="jump">
                     <div className="jump">
                         <p className="subtitle">DIEM API</p>
-                        <p className="dontShow">There are Two APIs: Hitokoto and Netease Cloud Music.</p>
+                        <p className="dontShow">Provide Hitokoto, Netease Cloud Music and Google Analytics APIs.</p>
                     </div>
                 </a>
             </article>
@@ -19,14 +19,14 @@ const BdFooterStars = () => (
                         <a href="https://meme.itswincer.com" className="href">
                             <div className="jump">
                                 <p className="subtitle">Meme</p>
-                                <p className="dontShow">A tool(Written by JavaScript) for generate meme.</p>
+                                <p className="dontShow">A tool (Written by JavaScript) for generate meme.</p>
                             </div>
                         </a>
                     </article>
                 </div>
                 <div className="tile is-parent">
                     <article className="tile is-child notification three showdelay">
-                        <a href="https://github.com/WincerChan/douban-import" className="href">
+                        <a href="https://github.com/WincerChan/douban-export" className="href">
                             <div className="jump">
                                 <p className="subtitle">Douban Export</p>
                                 <p className="dontShow">Export all Douban items which marked.</p>
@@ -37,10 +37,10 @@ const BdFooterStars = () => (
             </div>
             <div className="tile is-parent">
                 <article className="tile is-child notification four showdelay">
-                    <a href="https://github.com/WincerChan/QQMusic-Parse" className="href">
+                    <a href="https://github.com/WincerChan/mirror" className="href">
                         <div className="jump">
-                            <p className="subtitle">QQMusic Parse</p>
-                            <p className="dontShow">JavaScript parse for QQ music.</p>
+                            <p className="subtitle">Mirror</p>
+                            <p className="dontShow">Golang reverse proxy tool.</p>
                         </div>
                     </a>
                 </article>
