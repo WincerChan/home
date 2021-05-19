@@ -59,7 +59,7 @@ const Footer = () => (
             </div>
             <footer className="footer">
                 <div className="content has-text-centered">
-                    ©2017 - {new Date().getFullYear()} <span id="heart">♥</span> Made by <a href="https://diem.im">Wincer</a>.
+                    ©2017 - {new Date().getFullYear()} <span id="heart">♥</span> Made by <a href="https://itswincer.com">Wincer</a>.
             </div>
             </footer>
         </section>
